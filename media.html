@@ -130,17 +130,47 @@
 <section style="padding-bottom:4rem;">
   <div class="container">
     <div class="sh"><div class="tag"><div class="tag-line"></div>Presentation</div><h2>Sovereign Industrial Security</h2><p>The master deck covering CMMC compliance, Sovereign Hub Architecture, partner ecosystem, and funding strategy.</p></div>
-    <div class="glow-card" style="padding:0;overflow:hidden;">
-      <iframe src="https://docs.google.com/gview?url=https://github.com/covaultxyz/sovereign-seed/raw/cdda163/Sovereign_Industrial_Security.pdf&embedded=true" style="width:100%;height:80vh;border:none;border-radius:var(--radius);" allow="autoplay"></iframe>
+    <div class="glow-card" style="padding:1.5rem;overflow:hidden;">
+      <div id="slide-viewer" style="position:relative;background:#000;border-radius:var(--radius-sm);overflow:hidden;">
+        <img id="slide-img" src="slides/slide-00.jpg" alt="Slide 1 of 17" style="width:100%;display:block;">
+        <button id="prev-btn" onclick="changeSlide(-1)" style="position:absolute;left:0.75rem;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:1.25rem;cursor:pointer;backdrop-filter:blur(4px);transition:background 0.2s;">&larr;</button>
+        <button id="next-btn" onclick="changeSlide(1)" style="position:absolute;right:0.75rem;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:1.25rem;cursor:pointer;backdrop-filter:blur(4px);transition:background 0.2s;">&rarr;</button>
+        <div id="slide-counter" style="position:absolute;bottom:0.75rem;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.7);color:#fff;padding:0.3rem 0.75rem;border-radius:100px;font-family:var(--mono);font-size:0.7rem;backdrop-filter:blur(4px);">1 / 17</div>
+      </div>
     </div>
     <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1rem;align-items:center;">
-      <a href="https://github.com/covaultxyz/sovereign-seed/raw/cdda163/Sovereign_Industrial_Security.pdf" download style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.5rem;background:var(--accent);color:#fff;border-radius:var(--radius-sm);font-size:0.85rem;font-weight:600;text-decoration:none;transition:all 0.25s;">Download PDF &darr;</a>
-      <a href="https://github.com/covaultxyz/sovereign-seed/raw/cdda163/Sovereign_Industrial_Security.pptx" download style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.5rem;background:transparent;color:var(--text-primary);border:1px solid var(--border-hover);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:500;text-decoration:none;transition:all 0.25s;">Download PPTX &darr;</a>
       <span class="badge b-indigo">NSF-Ready</span>
       <span class="badge b-cyan">CMMC Alignment</span>
       <span class="badge b-amber">Partner Ecosystem</span>
       <span class="badge b-emerald">Funding Strategy</span>
+      <span style="font-family:var(--mono);font-size:0.7rem;color:var(--text-muted);margin-left:auto;">17 slides &bull; Use arrows or swipe</span>
     </div>
+    <script>
+    (function(){
+      var current=0, total=17;
+      var img=document.getElementById('slide-img');
+      var counter=document.getElementById('slide-counter');
+      window.changeSlide=function(d){
+        current=((current+d)%total+total)%total;
+        img.src='slides/slide-'+String(current).padStart(2,'0')+'.jpg';
+        img.alt='Slide '+(current+1)+' of '+total;
+        counter.textContent=(current+1)+' / '+total;
+      };
+      // Keyboard nav
+      document.addEventListener('keydown',function(e){
+        if(e.key==='ArrowRight')changeSlide(1);
+        if(e.key==='ArrowLeft')changeSlide(-1);
+      });
+      // Touch swipe
+      var sx=0;
+      var viewer=document.getElementById('slide-viewer');
+      viewer.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+      viewer.addEventListener('touchend',function(e){
+        var dx=e.changedTouches[0].clientX-sx;
+        if(Math.abs(dx)>50){changeSlide(dx<0?1:-1);}
+      },{passive:true});
+    })();
+    </script>
   </div>
 </section>
 
