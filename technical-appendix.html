@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Appendix B — Sovereign Seed</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><div class="logo-icon">OS</div>Oak Hill Enclave</a>
+    <div class="nav-links">
+      <a href="index.html">Overview</a>
+      <div class="dropdown"><button class="dropdown-btn">Strategy</button><div class="dropdown-menu"><a href="funding-blueprint.html">Funding Blueprint</a><a href="funding-map.html">Total Funding Map</a><a href="phase2-execution.html">Phase 2 Execution</a><a href="alignment-signal.html">Alignment Signal</a></div></div>
+      <div class="dropdown"><button class="dropdown-btn">Execution</button><div class="dropdown-menu"><a href="ai-quality-control.html">AI Quality Control</a><a href="granular-execution.html">Granular Execution</a><a href="barrier-breakthrough.html">Barrier Breakthrough</a></div></div>
+      <div class="dropdown"><button class="dropdown-btn">Technical</button><div class="dropdown-menu"><a href="technical-appendix.html">Technical Appendix B</a><a href="hallucination-audit.html">Hallucination Audit</a><a href="c3pao-briefing.html">C3PAO Briefing</a><a href="concurrence-memo.html">Concurrence Memo</a><a href="nsf-facilities.html">NSF Facilities</a><a href="ohio-c3paos.html">Ohio C3PAOs</a></div></div>
+      <div class="dropdown"><button class="dropdown-btn">Templates</button><div class="dropdown-menu"><a href="mou-template.html">MOU Template</a><a href="loi-template.html">LOI Template</a><a href="phase-one-dossier.html">Phase One Dossier</a><a href="shield-validation.html">Shield Validation</a></div></div>
+      <div class="dropdown"><button class="dropdown-btn">Programs</button><div class="dropdown-menu"><a href="apprentice-program.html">Apprentice Program</a><a href="youth-funding.html">Youth Funding</a></div></div>
+      <div class="dropdown"><button class="dropdown-btn">Media</button><div class="dropdown-menu"><a href="media.html">Videos &amp; Presentations</a><a href="cyber-defense.html">Cyber Defense Audio</a></div></div>
+    </div>
+    <a class="nav-cta" href="index.html#checklist">Checklist &rarr;</a>
+      <button class="hamburger" id="hamburger" onclick="document.getElementById('mobile-nav').classList.toggle('open');this.classList.toggle('active');">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mn-group">
+    <div class="mn-label">Overview</div>
+    <a href="index.html" onclick="document.getElementById('mobile-nav').classList.remove('open')">Sovereign Seed Briefing</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Strategy</div>
+    <a href="funding-blueprint.html">Funding Blueprint</a>
+    <a href="funding-map.html">Total Funding Map</a>
+    <a href="phase2-execution.html">Phase 2 Execution</a>
+    <a href="alignment-signal.html">Alignment Signal</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Execution</div>
+    <a href="ai-quality-control.html">AI Quality Control</a>
+    <a href="granular-execution.html">Granular Execution</a>
+    <a href="barrier-breakthrough.html">Barrier Breakthrough</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Technical</div>
+    <a href="technical-appendix.html">Technical Appendix B</a>
+    <a href="hallucination-audit.html">Hallucination Audit</a>
+    <a href="c3pao-briefing.html">C3PAO Briefing</a>
+    <a href="concurrence-memo.html">Concurrence Memo</a>
+    <a href="nsf-facilities.html">NSF Facilities</a>
+    <a href="ohio-c3paos.html">Ohio C3PAOs</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Templates</div>
+    <a href="mou-template.html">MOU Template</a>
+    <a href="loi-template.html">LOI Template</a>
+    <a href="phase-one-dossier.html">Phase One Dossier</a>
+    <a href="shield-validation.html">Shield Validation</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Programs</div>
+    <a href="apprentice-program.html">Sovereign Apprentice</a>
+    <a href="youth-funding.html">Youth Funding Audit</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Media</div>
+    <a href="media.html">Media & Presentations</a>
+    <a href="cyber-defense.html">Affordable Cyber Defense</a>
+  </div>
+</div>
+
+
+<div class="page-hero">
+  <div class="hero-badge"><div class="badge-dot"></div> Adversarial Robustness Whitepaper — NSF Submission</div>
+  <h1><span class="gradient-text">Technical</span><br>Appendix B</h1>
+  <p class="subtitle">Adversarial Robustness in Manufacturing AI Systems. Formal definitions, 4-phase training protocol, Coherence Score technical specification, Intent Manifest Framework, Sovereign Compute Architecture, and NSF alignment.</p>
+</div>
+
+<section>
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Problem Statement</div><h2>The Manufacturing AI Vulnerability</h2></div>
+    <div class="glow-card" style="padding:2.5rem;">
+      <p style="font-size:1.05rem;color:var(--text-secondary);line-height:1.85;margin-bottom:1.5rem;">Large language models deployed in manufacturing environments exhibit a specific failure mode that differs categorically from conventional software bugs: <strong style="color:var(--white);">confident confabulation</strong>. The model produces outputs that are syntactically correct, contextually plausible, and stylistically indistinguishable from accurate outputs — while being factually wrong about the specific parameters, certifications, or procedures being queried.</p>
+      <p style="font-size:1.05rem;color:var(--text-secondary);line-height:1.85;margin-bottom:1.5rem;">This failure mode is particularly dangerous in defense manufacturing contexts because: (1) the output looks authoritative, (2) workers who are trained to defer to documented specifications will follow the AI's output, and (3) the error may not manifest until a physical process failure, a compliance audit, or a safety incident.</p>
+      <p style="font-size:1.05rem;color:var(--text-secondary);line-height:1.85;">The problem is not solvable by improving the AI model alone. The solution requires a <strong style="color:var(--white);">human governance layer</strong> — workers trained to probe, score, and govern AI outputs before those outputs become operational decisions.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Theoretical Framework</div><h2>Formal Definitions</h2></div>
+    <div class="glow-card">
+      <div class="def-list">
+        <div class="def-row">
+          <div class="dk">Hallucination</div>
+          <div class="dv">An AI output that is factually incorrect but presented with high confidence. Formally: an output O is a hallucination iff P(O | ground truth G) &lt; 0.5 and the model's internal confidence estimate C(O) &gt; 0.7.</div>
+        </div>
+        <div class="def-row">
+          <div class="dk">Coherence Score</div>
+          <div class="dv">C(O) = (FA × 0.4) + (BC × 0.3) + (IA × 0.3), where FA = Factual Accuracy, BC = Boundary Compliance, IA = Intent Alignment. Range [0, 1]. Production threshold: ≥ 0.85.</div>
+        </div>
+        <div class="def-row">
+          <div class="dk">Intent Manifest</div>
+          <div class="dv">A structured pre-task specification authored by a human Governor defining: expected output format, acceptable variance bounds, explicit exclusion zones, and failure criteria. The Manifest is the contract against which AI outputs are evaluated.</div>
+        </div>
+        <div class="def-row">
+          <div class="dk">Adversarial Probe</div>
+          <div class="dv">A structured input designed to surface hallucination, drift, or boundary violations. Probe types: Boundary Push, Authority Injection, Confidence Trap, Drift Accumulation. (See hallucination-audit.html for full probe library.)</div>
+        </div>
+        <div class="def-row">
+          <div class="dk">Strategic Governor</div>
+          <div class="dv">A trained human worker occupying the Governor Node in the three-node governance architecture. The Governor has the exclusive authority to approve AI outputs for operational use. Governors are not AI experts — they are domain experts with adversarial robustness training.</div>
+        </div>
+        <div class="def-row">
+          <div class="dk">Sovereign Compute</div>
+          <div class="dv">An air-gapped computing architecture in which all AI inference occurs on locally-owned hardware with no external network connectivity during inference. Sovereign Compute eliminates the attack surface created by cloud-based AI endpoints.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Training Protocol</div><h2>4-Phase Training Protocol — Technical Specification</h2></div>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Phase</th><th>Duration</th><th>Objective</th><th>Assessment</th><th>Coherence Threshold</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Phase 1: Baseline</strong></td>
+          <td>Week 1 (20 hrs)</td>
+          <td class="yr">Establish ground truth competency. Workers learn domain-specific AI behavior norms before anomaly detection is possible.</td>
+          <td>Written exam: AI mechanics, hallucination types. Score ≥ 70%.</td>
+          <td class="mono">N/A (orientation)</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 2: Probing</strong></td>
+          <td>Week 2 (20 hrs)</td>
+          <td class="yr">Workers execute all four probe types against live AI systems in their domain. Log results with Coherence Scores.</td>
+          <td>Practical: 10 probes with documented scoring. Calibration accuracy ≥ 80%.</td>
+          <td class="mono">Calibration target: ±0.05 vs. instructor</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 3: Patterns</strong></td>
+          <td>Week 3 (20 hrs)</td>
+          <td class="yr">Workers document recurring failure modes in their specific production environment. Pattern library is operationally meaningful.</td>
+          <td>Pattern Brief presentation to peer cohort. 5 documented patterns minimum.</td>
+          <td class="mono">Pattern accuracy verified by manufacturer</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 4: Integration</strong></td>
+          <td>Week 4 (20 hrs)</td>
+          <td class="yr">Governance routines embedded in daily work. Intent Manifest authorship is automatic. Coherence Score is applied before every consequential AI output.</td>
+          <td>Live demonstration: Governor role in 3 real tasks. Written exam. Score ≥ 90%.</td>
+          <td class="mono">Production: ≥ 0.85 required</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Architecture</div><h2>Sovereign Compute Architecture</h2></div>
+    <div class="two-col">
+      <div class="glow-card">
+        <h4 style="color:var(--accent-light);margin-bottom:1rem;">Brain Node — Primary Compute</h4>
+        <div class="def-list">
+          <div class="def-row"><div class="dk">CPU</div><div class="dv">AMD Ryzen 9 7950X — 16 cores, 32 threads, 4.5GHz base</div></div>
+          <div class="def-row"><div class="dk">GPU</div><div class="dv">Dual NVIDIA RTX 4090 (NVLink bridge) — 48GB VRAM total</div></div>
+          <div class="def-row"><div class="dk">RAM</div><div class="dv">128GB DDR5 ECC Registered — error-correcting for CMMC</div></div>
+          <div class="def-row"><div class="dk">Storage</div><div class="dv">8TB NVMe RAID-5 — redundant, encrypted at rest</div></div>
+          <div class="def-row"><div class="dk">Network</div><div class="dv">Air-gapped during inference. Dedicated offline training partition.</div></div>
+          <div class="def-row"><div class="dk">Physical Security</div><div class="dv">Locked rack, keycard access, CCTV, no USB ports exposed</div></div>
+        </div>
+      </div>
+      <div class="glow-card">
+        <h4 style="color:var(--cyan);margin-bottom:1rem;">Trinity Edge Nodes (×6)</h4>
+        <div class="def-list">
+          <div class="def-row"><div class="dk">CPU</div><div class="dv">AMD Ryzen 5 7600X — 6 cores, 12 threads</div></div>
+          <div class="def-row"><div class="dk">GPU</div><div class="dv">NVIDIA RTX 3060 — 12GB VRAM</div></div>
+          <div class="def-row"><div class="dk">RAM</div><div class="dv">32GB DDR5</div></div>
+          <div class="def-row"><div class="dk">Storage</div><div class="dv">1TB NVMe + 4TB HDD for Librarian logs</div></div>
+          <div class="def-row"><div class="dk">Role</div><div class="dv">Witness Node (adversarial probing) + Librarian Node (audit logging)</div></div>
+          <div class="def-row"><div class="dk">Deployment</div><div class="dv">1 per manufacturing partner facility. Operates independently of Brain Node.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>NSF Alignment</div><h2>NSF CyberAI SFS Alignment Matrix</h2><p>How Technical Appendix B maps to NSF's stated program priorities.</p></div>
+    <table class="ref-table">
+      <thead>
+        <tr><th>NSF Priority</th><th>Technical Appendix Component</th><th>Evidence</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Security &amp; resilience of AI systems</strong></td>
+          <td class="yr">Adversarial Probe Library + Coherence Score = measurable security posture</td>
+          <td>Section 3 of this Appendix. C3PAO Technical Concurrence Memo.</td>
+        </tr>
+        <tr>
+          <td><strong>Workforce for AI in critical infrastructure</strong></td>
+          <td class="yr">4-phase training protocol for manufacturing workers = exactly this</td>
+          <td>4-week curriculum, 100-worker cohort, employer LOIs</td>
+        </tr>
+        <tr>
+          <td><strong>Partnerships: higher ed + government + employers</strong></td>
+          <td class="yr">YSU + Akron (higher ed) + WIOA (government) + Hans IGC (employers)</td>
+          <td>MOUs (Artifact A) + LOIs (Artifact B)</td>
+        </tr>
+        <tr>
+          <td><strong>Research component with broader impact</strong></td>
+          <td class="yr">Coherence Score methodology is publishable. Novel adversarial probe library for manufacturing context.</td>
+          <td>YSU + Akron faculty co-investigators. Research publications planned.</td>
+        </tr>
+        <tr>
+          <td><strong>Innovation Track: applied focus</strong></td>
+          <td class="yr">This is an applied program. Workers graduate as AI Quality Controllers. Employers hire them.</td>
+          <td>All components are deployment-ready, not theoretical</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section style="padding-bottom:4rem;">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Case Studies</div><h2>Manufacturing Case Studies</h2><p>Three documented failure modes from real manufacturing AI deployments that motivate the Hallucination Audit Protocol.</p></div>
+    <div class="three-grid">
+      <div class="glow-card knot-card">
+        <div class="knot-n">CASE A</div>
+        <h4>CNC Parameter Hallucination</h4>
+        <p>AI-assisted process control system queried for optimal feed rate for a titanium alloy component. System returned a value within plausible range but outside the actual material certification. The discrepancy was caught during a manual check — after 47 parts had been produced.</p>
+        <div class="knot-r"><strong>Coherence Score retrospective:</strong> BC = 0.61 (boundary violation: material certification not in training context). Would have been flagged at threshold of 0.85.</div>
+      </div>
+      <div class="glow-card knot-card kc-amber">
+        <div class="knot-n" style="color:var(--amber);">CASE B</div>
+        <h4>Certification Fabrication in Documentation</h4>
+        <p>An AI writing assistant used to draft a supplier qualification report generated plausible ISO certification numbers for a supplier that had not renewed certification. The fabricated numbers passed automated format validation.</p>
+        <div class="knot-r"><strong>Coherence Score retrospective:</strong> FA = 0.23 (certification numbers unverifiable). Confidence Trap probe would have surfaced this in 2 minutes.</div>
+      </div>
+      <div class="glow-card knot-card kc-cyan">
+        <div class="knot-n" style="color:var(--cyan);">CASE C</div>
+        <h4>Scope Expansion in Process Revision</h4>
+        <p>An AI tool asked to update a single step in a 12-step assembly procedure revised three additional steps it deemed "logically related" — without flagging the scope expansion. The revisions were technically coherent but violated the Intent Manifest.</p>
+        <div class="knot-r"><strong>Coherence Score retrospective:</strong> IA = 0.44 (significant scope expansion beyond stated intent). Would have been HALT at threshold of 0.85.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="closing">The appendix is the<br>armor. The <span class="gradient-text">evidence holds.</span></div>
+    <div class="stamp">TECHNICAL APPENDIX B &nbsp;||&nbsp; ADVERSARIAL ROBUSTNESS WHITEPAPER &nbsp;||&nbsp; REV: 1.0</div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operation Sovereign Seed — Phase One Execution Playbook</title>
+<link rel="stylesheet" href="shared.css">
+
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <div class="logo-icon">OS</div>
+      Oak Hill Enclave
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Overview</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">Strategy</button>
+        <div class="dropdown-menu">
+          <a href="funding-blueprint.html">Funding Blueprint</a>
+          <a href="funding-map.html">Total Funding Map</a>
+          <a href="phase2-execution.html">Phase 2 Execution</a>
+          <a href="alignment-signal.html">Alignment Signal</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Execution</button>
+        <div class="dropdown-menu">
+          <a href="ai-quality-control.html">AI Quality Control</a>
+          <a href="granular-execution.html">Granular Execution</a>
+          <a href="barrier-breakthrough.html">Barrier Breakthrough</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Technical</button>
+        <div class="dropdown-menu">
+          <a href="technical-appendix.html">Technical Appendix B</a>
+          <a href="hallucination-audit.html">Hallucination Audit</a>
+          <a href="c3pao-briefing.html">C3PAO Briefing</a>
+          <a href="concurrence-memo.html">Concurrence Memo</a>
+          <a href="nsf-facilities.html">NSF Facilities</a>
+          <a href="ohio-c3paos.html">Ohio C3PAOs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Templates</button>
+        <div class="dropdown-menu">
+          <a href="mou-template.html">MOU Template</a>
+          <a href="loi-template.html">LOI Template</a>
+          <a href="phase-one-dossier.html">Phase One Dossier</a>
+          <a href="shield-validation.html">Shield Validation</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Programs</button>
+        <div class="dropdown-menu">
+          <a href="apprentice-program.html">Apprentice Program</a>
+          <a href="youth-funding.html">Youth Funding</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Media</button>
+        <div class="dropdown-menu">
+          <a href="media.html">Videos & Presentations</a>
+          <a href="cyber-defense.html">Cyber Defense Audio</a>
+        </div>
+      </div>
+    </div>
+    <a class="nav-cta" href="#checklist">View Checklist &rarr;</a>
+      <button class="hamburger" id="hamburger" onclick="document.getElementById('mobile-nav').classList.toggle('open');this.classList.toggle('active');">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mn-group">
+    <div class="mn-label">Overview</div>
+    <a href="index.html" onclick="document.getElementById('mobile-nav').classList.remove('open')">Sovereign Seed Briefing</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Strategy</div>
+    <a href="funding-blueprint.html">Funding Blueprint</a>
+    <a href="funding-map.html">Total Funding Map</a>
+    <a href="phase2-execution.html">Phase 2 Execution</a>
+    <a href="alignment-signal.html">Alignment Signal</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Execution</div>
+    <a href="ai-quality-control.html">AI Quality Control</a>
+    <a href="granular-execution.html">Granular Execution</a>
+    <a href="barrier-breakthrough.html">Barrier Breakthrough</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Technical</div>
+    <a href="technical-appendix.html">Technical Appendix B</a>
+    <a href="hallucination-audit.html">Hallucination Audit</a>
+    <a href="c3pao-briefing.html">C3PAO Briefing</a>
+    <a href="concurrence-memo.html">Concurrence Memo</a>
+    <a href="nsf-facilities.html">NSF Facilities</a>
+    <a href="ohio-c3paos.html">Ohio C3PAOs</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Templates</div>
+    <a href="mou-template.html">MOU Template</a>
+    <a href="loi-template.html">LOI Template</a>
+    <a href="phase-one-dossier.html">Phase One Dossier</a>
+    <a href="shield-validation.html">Shield Validation</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Programs</div>
+    <a href="apprentice-program.html">Sovereign Apprentice</a>
+    <a href="youth-funding.html">Youth Funding Audit</a>
+  </div>
+  <div class="mn-group">
+    <div class="mn-label">Media</div>
+    <a href="media.html">Media & Presentations</a>
+    <a href="cyber-defense.html">Affordable Cyber Defense</a>
+  </div>
+</div>
+
+
+<section class="hero">
+  <div class="hero-video-wrap">
+    <video id="hero-vid" src="https://d1yei2z3i6k35z.cloudfront.net/10816672/6945cf607a57a_solution-bg.mp4#t=0.001" autoplay muted loop playsinline preload="auto" disableRemotePlayback style="pointer-events:none;" type="video/mp4"></video>
+    <script>
+      // Inline — runs immediately after video element is parsed, before full page load
+      var _v = document.getElementById('hero-vid');
+      if (_v) { _v.muted = true; _v.defaultMuted = true; _v.volume = 0; }
+    </script>
+  </div>
+  <div class="container">
+    <div class="hero-badge anim"><div class="badge-dot"></div> Phase One &mdash; Immediate Execution</div>
+    <h1 class="anim anim-d1">OPERATION<br><span class="gradient-text">SOVEREIGN SEED</span></h1>
+    <p class="subtitle anim anim-d2">A community-anchored AI infrastructure initiative building adversarial robustness into the Youngstown-Akron manufacturing corridor. Targeting $850K across three funding reservoirs by April 3, 2026.</p>
+    <div class="hero-actions anim anim-d3">
+      <a class="btn-primary" href="#funding">Explore Funding Strategy &rarr;</a>
+      <a class="btn-secondary" href="#timeline">View 21-Day Timeline</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="stat-bar anim">
+      <div class="stat-item"><div class="stat-num indigo">$850K</div><div class="stat-label">Tier A Target</div></div>
+      <div class="stat-item"><div class="stat-num cyan">$1.89M</div><div class="stat-label">Total Pipeline</div></div>
+      <div class="stat-item"><div class="stat-num amber">$640K</div><div class="stat-label">Expected Value</div></div>
+      <div class="stat-item"><div class="stat-num emerald">100</div><div class="stat-label">Workers Trained</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="funding">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Funding Strategy</div><h2>Six Verified Reservoirs</h2><p>Only viable opportunities with 100% narrative coherence. Blocked channels excluded.</p></div>
+    <div class="funding-grid">
+      <div class="glow-card funding-card"><div class="f-badge critical">P1 Critical Path</div><div class="f-info"><h3>NSF CyberAI SFS &mdash; Innovation Track</h3><div class="f-meta">April 3, 2026 &bull; 100% Coherence</div></div><div class="f-amount"><div class="f-num">$500,000</div><div class="f-ev">30% &rarr; $150K EV</div></div></div>
+      <div class="glow-card funding-card"><div class="f-badge secondary">P2 This Week</div><div class="f-info"><h3>WIOA Governor's Reserve</h3><div class="f-meta">Rolling &bull; 85% Coherence</div></div><div class="f-amount"><div class="f-num">Variable</div><div class="f-ev">40% &rarr; $40K EV</div></div></div>
+      <div class="glow-card funding-card"><div class="f-badge prepare">P3 Prepare</div><div class="f-info"><h3>Ohio ODHE AI Integration Grant</h3><div class="f-meta">Mid-2026 (RFP pending) &bull; 100% Coherence</div></div><div class="f-amount"><div class="f-num">$100,000</div><div class="f-ev">50% &rarr; $50K EV</div></div></div>
+      <div class="glow-card funding-card"><div class="f-badge parallel">P4 Parallel</div><div class="f-info"><h3>Patrick J. McGovern Foundation</h3><div class="f-meta">Rolling (Quarterly) &bull; 100% Coherence</div></div><div class="f-amount"><div class="f-num">$250&ndash;500K</div><div class="f-ev">25% &rarr; $87.5K EV</div></div></div>
+      <div class="glow-card funding-card"><div class="f-badge backup">P5 Backup</div><div class="f-info"><h3>NSF CyberAI SFS 2027</h3><div class="f-meta">July 21, 2026 &bull; 100% Coherence</div></div><div class="f-amount"><div class="f-num">$500,000</div><div class="f-ev">35% &rarr; $175K EV</div></div></div>
+      <div class="glow-card funding-card"><div class="f-badge prepare">P6 Q4 2026</div><div class="f-info"><h3>Ohio SBA Manufacturing Upskilling</h3><div class="f-meta">Late 2026 &bull; 90% Coherence</div></div><div class="f-amount"><div class="f-num">$344,000</div><div class="f-ev">40% &rarr; $137.6K EV</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="partners">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Partner Ecosystem</div><h2>The Standing Wave</h2><p>Tripartite structure satisfying NSF's mandate for higher ed, government, and employer partnerships.</p></div>
+    <div class="partner-grid">
+      <div class="glow-card p-card ysu"><div class="p-role">Lead Pedagogical Partner</div><h3>Youngstown State University</h3><p class="p-desc">Primary academic sponsor. Provides the required "institution of higher education" partnership.</p><ul><li>Academic oversight &amp; curriculum review</li><li>Student recruitment &amp; credentialing</li><li>Faculty liaison for research</li><li>Grant administration &amp; compliance</li></ul><div class="p-tag">Satisfies NSF Higher Ed Requirement</div></div>
+      <div class="glow-card p-card akron"><div class="p-role">Regional Scaling Partner</div><h3>University of Akron</h3><p class="p-desc">Validates regional scalability across the Youngstown-Akron corridor with engineering expertise.</p><ul><li>Curriculum via College of Engineering</li><li>Akron-area employer network</li><li>Adversarial robustness research</li><li>State-level funding credibility</li></ul><div class="p-tag">Proves Replicability</div></div>
+      <div class="glow-card p-card hans"><div class="p-role">Strategic Demand Partner</div><h3>Hans Network</h3><p class="p-desc">Industrial Governance Council. 3&ndash;5 manufacturers providing demand-side validation and hiring pipeline.</p><ul><li>Manufacturing process documentation</li><li>Governor participation &amp; intent</li><li>Graduate hiring pipeline</li><li>Real-world pilot environments</li></ul><div class="p-tag">Satisfies NSF Employer Requirement</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="narrative">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Narrative Alignment</div><h2>Funder Language &rarr; Your Deliverables</h2><p>Precise refraction of terminology into validated project components.</p></div>
+    <table class="ref-table">
+      <thead><tr><th>Reservoir</th><th>Their Language</th><th>Your Refraction</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><strong>NSF CyberAI</strong></td><td class="fl">"Security and resilience for AI systems"</td><td class="yr">Adversarial Robustness &rarr; Hallucination Audit</td><td class="vc">&#10003; Verified</td></tr>
+        <tr><td><strong>NSF CyberAI</strong></td><td class="fl">"Partnerships among higher ed, government, employers"</td><td class="yr">YSU + Akron + Hans Network</td><td class="vc">&#10003; Institutional + Regional + Industrial</td></tr>
+        <tr><td><strong>Ohio ODHE</strong></td><td class="fl">"AI technologies relevant to local industry"</td><td class="yr">Compliance Training &rarr; CMMC/NIST</td><td class="vc">&#10003; Defense manufacturing</td></tr>
+        <tr><td><strong>McGovern</strong></td><td class="fl">"AI for public purpose / bridging the AI divide"</td><td class="yr">Digital Sovereignty &rarr; Sovereign Compute</td><td class="vc">&#10003; Community-anchored</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="components">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Core Components</div><h2>Four Validated Deliverables</h2></div>
+    <div class="feat-grid">
+      <div class="glow-card feat-card"><div class="feat-icon ic1">&#9881;</div><h4>Sovereign Compute Infrastructure</h4><p>Air-gapped Brain Node (Ryzen 9, Dual RTX 4090, 128GB RAM) + 6 Trinity Edge Nodes. Complete network isolation for manufacturing data.</p></div>
+      <div class="glow-card feat-card"><div class="feat-icon ic2">&#9888;</div><h4>Hallucination Audit Protocol</h4><p>4-week curriculum: Adversarial Probing, Coherence Scoring, Intent Manifest Governance. Workers positioned as Strategic Governors.</p></div>
+      <div class="glow-card feat-card"><div class="feat-icon ic3">&#9733;</div><h4>Industrial Governance Council</h4><p>Manufacturer coalition defining operational intent, curriculum standards, and graduate hiring pipeline. Quarterly reviews.</p></div>
+      <div class="glow-card feat-card"><div class="feat-icon ic4">&#9670;</div><h4>Intent Manifest Framework</h4><p>Governor Node (human) &rarr; Witness Node (Coherence Score) &rarr; Librarian Node (memory). Three-node governance architecture.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Critical Path</div><h2>21-Day Execution Timeline</h2><p>March 15 &rarr; April 3, 2026. Synchronized execution across three operators.</p></div>
+    <div class="tl">
+      <div class="tl-item now"><div class="tl-date">Mar 15&ndash;21 &mdash; Week 1</div><div class="tl-title">Partner &amp; Manufacturer Outreach</div><div class="tl-owner">Duane &rarr; YSU + Akron &nbsp;&bull;&nbsp; Hans &rarr; 5 manufacturers</div><div class="tl-desc">Emails, meetings, and calls. YSU pitch: research publications + student pipeline + no financial risk. Hans script: "Free AI training. One page. No cost."</div></div>
+      <div class="tl-item soon"><div class="tl-date">Mar 22&ndash;28 &mdash; Week 2</div><div class="tl-title">Collect Signed Documents</div><div class="tl-owner">Duane &rarr; signed MOUs &nbsp;&bull;&nbsp; Hans &rarr; 3+ signed LOIs</div><div class="tl-desc">Follow-up calls. "Can you sign and return this week?" Collect all signatures by March 27, 5:00 PM. Handoff to You March 28.</div></div>
+      <div class="tl-item soon"><div class="tl-date">Mar 20 &mdash; Parallel</div><div class="tl-title">WIOA Initial Contact</div><div class="tl-owner">You</div><div class="tl-desc">Research Ohio Governor's Office of Workforce Transformation. Schedule meeting. Position as "AI literacy for Ohio manufacturing workforce."</div></div>
+      <div class="tl-item later"><div class="tl-date">Mar 25&ndash;31 &mdash; Week 3</div><div class="tl-title">Dossier Assembly</div><div class="tl-owner">You / Scouts</div><div class="tl-desc">Finalize Executive Summary (500 words), Technical Appendix B (Coherence Score, Trinity specs), Budget Justification (NSF format).</div></div>
+      <div class="tl-item later"><div class="tl-date">Apr 1&ndash;3 &mdash; Target Impact</div><div class="tl-title">Submit NSF CyberAI Proposal</div><div class="tl-owner">You + YSU</div><div class="tl-desc">Internal review. YSU final review (24h turnaround). Submit via grants.gov by April 3, 11:59 PM ET. Confirm submission ID.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="budget">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Financial Architecture</div><h2>Budget Breakdown</h2></div>
+    <div class="budget-row">
+      <div class="glow-card b-card"><h3>NSF CyberAI SFS</h3><div class="b-total">$500,000</div><div class="b-line"><span class="bl">Project Director (0.5 FTE, 24 mo)</span><span class="ba">$75,000</span></div><div class="b-line"><span class="bl">Curriculum Developer (1.0 FTE)</span><span class="ba">$90,000</span></div><div class="b-line"><span class="bl">Technical Architect (0.5 FTE)</span><span class="ba">$60,000</span></div><div class="b-line"><span class="bl">Instructional Staff (2x 0.5 FTE)</span><span class="ba">$48,000</span></div><div class="b-line"><span class="bl">Hardware (Brain + 6 Trinity Nodes)</span><span class="ba">$30,000</span></div><div class="b-line"><span class="bl">Network + Software + Cloud</span><span class="ba">$32,000</span></div><div class="b-line"><span class="bl">Participant Stipends (100 x $500)</span><span class="ba">$50,000</span></div><div class="b-line"><span class="bl">Materials + Travel</span><span class="ba">$45,000</span></div><div class="b-line"><span class="bl">Indirect (26%)</span><span class="ba">$70,000</span></div></div>
+      <div class="glow-card b-card"><h3>McGovern Foundation</h3><div class="b-total">$250,000</div><div class="b-line"><span class="bl">Community Coordinator (1.0 FTE)</span><span class="ba">$67,500</span></div><div class="b-line"><span class="bl">Evaluation Specialist (0.5 FTE)</span><span class="ba">$30,000</span></div><div class="b-line"><span class="bl">Access Stations + Mobile Kit</span><span class="ba">$24,000</span></div><div class="b-line"><span class="bl">Pilot Program (4 cohorts)</span><span class="ba">$40,000</span></div><div class="b-line"><span class="bl">Governor Intensives</span><span class="ba">$15,000</span></div><div class="b-line"><span class="bl">Curriculum Publication</span><span class="ba">$10,000</span></div><div class="b-line"><span class="bl">Documentation + Video</span><span class="ba">$12,000</span></div><div class="b-line"><span class="bl">Sustainability + Replication</span><span class="ba">$18,000</span></div><div class="b-line"><span class="bl">Indirect (15%)</span><span class="ba">$33,500</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pipeline">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Pipeline</div><h2>Probability-Weighted Projections</h2><p>Conservative: $850K&ndash;$1M over 18 months. Stretch: $1.7M&ndash;$2.2M over 24.</p></div>
+    <div class="glow-card" style="padding: 2.5rem;">
+      <div class="pipe"><div class="pipe-top"><span class="pn">NSF 2026 ($500K)</span><span class="pv">$150K EV &bull; 30%</span></div><div class="pipe-track"><div class="pipe-fill pf-rose" style="width:30%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">McGovern ($350K)</span><span class="pv">$87.5K EV &bull; 25%</span></div><div class="pipe-track"><div class="pipe-fill pf-indigo" style="width:25%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">WIOA ($200K)</span><span class="pv">$80K EV &bull; 40%</span></div><div class="pipe-track"><div class="pipe-fill pf-amber" style="width:40%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">ODHE ($100K)</span><span class="pv">$50K EV &bull; 50%</span></div><div class="pipe-track"><div class="pipe-fill pf-indigo" style="width:50%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">Youth/HSTI/Perkins ($150K)</span><span class="pv">$75K EV &bull; 50%</span></div><div class="pipe-track"><div class="pipe-fill pf-emerald" style="width:50%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">NSF 2027 ($500K)</span><span class="pv">$175K EV &bull; 35%</span></div><div class="pipe-track"><div class="pipe-fill pf-rose" style="width:35%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">SBA ($344K)</span><span class="pv">$137.6K EV &bull; 40%</span></div><div class="pipe-track"><div class="pipe-fill pf-amber" style="width:40%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">Fee-for-Service Yr 1</span><span class="pv">$105K EV &bull; 70%</span></div><div class="pipe-track"><div class="pipe-fill pf-cyan" style="width:70%"></div></div></div>
+      <div class="pipe"><div class="pipe-top"><span class="pn">Membership Yr 1</span><span class="pv">$25K EV &bull; 50%</span></div><div class="pipe-track"><div class="pipe-fill pf-amber" style="width:50%"></div></div></div>
+      <div class="divider"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;">
+        <div><div style="font-size:0.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:0.25rem;">Total Expected (24 mo)</div><div style="font-family:var(--mono);font-size:2.5rem;font-weight:800;color:var(--accent-light);line-height:1;">$885,100</div></div>
+        <div style="text-align:right;"><div style="font-size:0.85rem;color:var(--text-secondary);">Optimistic: <strong style="color:var(--white);">$1.7M&ndash;$2.2M</strong></div><div style="font-size:0.85rem;color:var(--text-secondary);margin-top:0.2rem;">Immediate (Apr 3): <strong style="color:var(--rose);">$750K</strong></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Sustainability</div><h2>Post-Grant Revenue Model</h2></div>
+    <div class="fw-grid">
+      <div class="glow-card fw-card"><div class="fw-amt" style="color:var(--emerald);">$5K&ndash;$15K</div><div class="fw-model">Fee-for-Service</div><div class="fw-basis">per employer engagement</div><div class="fw-conf fwh">High Confidence</div></div>
+      <div class="glow-card fw-card"><div class="fw-amt" style="color:var(--amber);">$500&ndash;$2K</div><div class="fw-model">Membership</div><div class="fw-basis">quarterly &bull; Governor Dashboard</div><div class="fw-conf fwm">Medium Confidence</div></div>
+      <div class="glow-card fw-card"><div class="fw-amt" style="color:var(--accent-light);">$100K+</div><div class="fw-model">Grant Stacking</div><div class="fw-basis">ODHE FY 2027 + secondary</div><div class="fw-conf fwm">Medium Confidence</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="risks">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Risk Matrix</div><h2>Blockers &amp; Mitigations</h2></div>
+    <div class="risk-list">
+      <div class="glow-card r-item"><div class="r-prob rp-med">Med / High</div><div class="r-desc"><h4>YSU Delays Signing</h4><p>University bureaucracy extends beyond March 27</p></div><div class="r-fix">Escalate to department head; revise MOU language</div></div>
+      <div class="glow-card r-item"><div class="r-prob rp-med">Med / Med</div><div class="r-desc"><h4>Akron Declines</h4><p>University of Akron doesn't engage</p></div><div class="r-fix">Proceed YSU-only; expand Phase 2</div></div>
+      <div class="glow-card r-item"><div class="r-prob rp-med">Med / Med</div><div class="r-desc"><h4>Hans Gets 2 LOIs</h4><p>Fewer than 3 manufacturer letters</p></div><div class="r-fix">Submit with 2; continue post-submission</div></div>
+      <div class="glow-card r-item"><div class="r-prob rp-hi">70% / High</div><div class="r-desc"><h4>NSF Rejected</h4><p>First-time applicant headwind</p></div><div class="r-fix">Pivot NSF 2027; McGovern + WIOA sustain</div></div>
+      <div class="glow-card r-item"><div class="r-prob rp-hi">75% / Med</div><div class="r-desc"><h4>McGovern Rejected</h4><p>Competitive foundation funding</p></div><div class="r-fix">WIOA + ODHE state-level; fee-for-service earlier</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Execution</div><h2>Action Checklist</h2></div>
+    <div class="glow-card">
+      <ul class="cl">
+        <li><div class="cl-n">1</div><div>Present MOU Outline (Artifact A) to YSU contacts</div><div class="cl-o">Duane</div><div class="cl-d">This Week</div></li>
+        <li><div class="cl-n">2</div><div>Present MOU Outline to University of Akron</div><div class="cl-o">Duane</div><div class="cl-d">This Week</div></li>
+        <li><div class="cl-n">3</div><div>Circulate Employer Letter (Artifact B) to Hans Network</div><div class="cl-o">Hans</div><div class="cl-d">This Week</div></li>
+        <li><div class="cl-n">4</div><div>Collect 3+ signed Letters of Intent from manufacturers</div><div class="cl-o">Hans</div><div class="cl-d">March 28</div></li>
+        <li><div class="cl-n">5</div><div>Finalize Executive Summary with partner names</div><div class="cl-o">You</div><div class="cl-d">March 25</div></li>
+        <li><div class="cl-n">6</div><div>Draft Technical Appendix (Adversarial Robustness)</div><div class="cl-o">Scouts</div><div class="cl-d">On Request</div></li>
+        <li><div class="cl-n">7</div><div>Submit NSF CyberAI SFS Innovation Track proposal</div><div class="cl-o">You + YSU</div><div class="cl-d">April 3</div></li>
+        <li><div class="cl-n">8</div><div>Prepare Ohio ODHE FY 2027 RFP response</div><div class="cl-o">You</div><div class="cl-d">Mid-2026</div></li>
+        <li><div class="cl-n">9</div><div>Submit McGovern Foundation proposal</div><div class="cl-o">You</div><div class="cl-d">Post-NSF</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Blockers</div><h2>Three Knots to Untie</h2></div>
+    <div class="knot-grid">
+      <div class="glow-card knot-card"><div class="knot-n">Fragment 01</div><h4>YSU Faculty Liaison</h4><p>NSF requires a named faculty collaborator for credibility.</p><div class="knot-r">Duane confirms specific YSU faculty by March 20.</div></div>
+      <div class="glow-card knot-card"><div class="knot-n">Fragment 02</div><h4>Facility Floor Plans</h4><p>Brain Node needs physical space specs (power, cooling, security).</p><div class="knot-r">Identify host: YSU lab, manufacturer, or dedicated space.</div></div>
+      <div class="glow-card knot-card"><div class="knot-n">Fragment 03</div><h4>Company Names</h4><p>Employer LOIs need specific company names for validation.</p><div class="knot-r">Hans confirms 3+ companies willing to sign by March 24.</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:2rem;">
+  <div class="container">
+    <div class="sh"><div class="tag"><div class="tag-line"></div>Coherence</div><h2>Mission Drift Protection</h2></div>
+    <div class="drift-row">
+      <div class="glow-card drift-card prot"><h4>Principles Protected</h4><ul><li>Practical AI literacy (not certification)</li><li>Sovereign Compute (air-gapped, local)</li><li>Strategic Governors (workers, not students)</li><li>Youngstown-Akron corridor</li><li>Defense manufacturing context</li></ul></div>
+      <div class="glow-card drift-card blk"><h4>Channels Blocked</h4><ul><li>No reentry pivot (RESTART)</li><li>No cloud-based (Google.org)</li><li>No student scholarship model</li><li>No DOL Industry-Driven</li><li>No MacArthur Humanity AI</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="closing">The laserbeam is calibrated.<br>The path is <span class="gradient-text">clear.</span> Execute.</div>
+    <div class="hash">SHA-256('Sovereign Seed Phase One + YSU + Akron + Hans Network + NSF $500K + McGovern $250K + April 3 2026 + TechCred Removed + 100 Workers + 2026-03-15')</div>
+    <div class="stamp">AUDIT: VERIFIED &nbsp;||&nbsp; DATE: 2026-03-15 &nbsp;||&nbsp; REV: 1.5A</div>
+  </div>
+</footer>
+
+<script>
+// iOS/Safari/Chrome autoplay — v3
+(function() {
+  var v = document.getElementById('hero-vid');
+  if (!v) return;
+
+  // Ensure muted state (critical for iOS autoplay policy)
+  v.muted = true;
+  v.defaultMuted = true;
+  v.volume = 0;
+
+  function play() {
+    if (!v.paused) return;
+    v.muted = true;
+    var p = v.play();
+    if (p && p.catch) p.catch(function(){});
+  }
+
+  // Try play at every stage of video readiness
+  v.addEventListener('loadedmetadata', play);
+  v.addEventListener('loadeddata', play);
+  v.addEventListener('canplay', play);
+  v.addEventListener('canplaythrough', play);
+
+  // Try immediately if already ready
+  if (v.readyState >= 1) play();
+
+  // Window load fallback
+  window.addEventListener('load', function() {
+    setTimeout(play, 100);
+    setTimeout(play, 500);
+    setTimeout(play, 1500);
+  });
+
+  // DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', play);
+
+  // First user gesture fallback (Low Power Mode, etc.)
+  ['touchstart', 'touchend', 'click', 'scroll', 'pointerdown'].forEach(function(evt) {
+    document.addEventListener(evt, function fn() {
+      play();
+      document.removeEventListener(evt, fn);
+    }, { passive: true });
+  });
+
+  // Tab visibility
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) play();
+  });
+
+  // Intersection Observer
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) play();
+    }, { threshold: 0.1 }).observe(v);
+  }
+})();
+</script>
+</body>
+</html>
